@@ -1,0 +1,23 @@
+{
+  "name": "dnd-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jed-stream-tools/DnD-Generator.git"
+  },
+  "author": "J3d247",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jed-stream-tools/DnD-Generator/issues"
+  },
+  "homepage": "https://github.com/jed-stream-tools/DnD-Generator#readme"
+}
