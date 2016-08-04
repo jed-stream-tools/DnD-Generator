@@ -22,7 +22,7 @@ function generate() {
     let l = _location[randomIntFromInterval(0, _location.length -1)];
     let b = _backstory[randomIntFromInterval(0, _backstory.length -1)];
 
-    return `${a} ${r} ${c} from ${l} who ${b}`;
+    return `${/(a|e|i|o|u)/g.test(a[0]) ? 'an' : 'a'} ${a} ${r} ${c} from ${l} who ${b}`;
 }
 
 function randomIntFromInterval(min,max)
