@@ -22,7 +22,12 @@ function generate() {
     let l = _location[randomIntFromInterval(0, _location.length -1)];
     let b = _backstory[randomIntFromInterval(0, _backstory.length -1)];
 
-    return `${/(a|e|i|o|u)/g.test(a[0]) ? 'an' : 'a'} ${a} ${r} ${c} from ${l} who ${b}`;
+    let message = `${/(a|e|i|o|u)/g.test(a[0]) ? 'an' : 'a'} ${a} ${r} ${c} from ${l} who ${b}`;
+
+    if (req.query.token) {
+        message = `${req.query.user_name} you are ${message}`;
+    }
+    return message;
 }
 
 function randomIntFromInterval(min,max)
